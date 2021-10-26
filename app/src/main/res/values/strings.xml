@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">스마트안전맵 (울산중부서)</string>
+    <string name="title_activity_maps">123</string>
+    <string name="title_activity_maps2">Map</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
