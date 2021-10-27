@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-
     package="com.safetymap.ulsan.jungbu">
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
@@ -17,6 +16,10 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
 
     <uses-feature
         android:name="android.hardware.camera"
@@ -49,11 +52,9 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".introActivity"/>
-
-        <activity
-            android:name=".MapsActivity"/>
-
+        <activity android:name=".introActivity" />
+        <activity android:name=".MapsActivity" />
+        <activity android:name=".SmsActivity"/>
 
     </application>
 

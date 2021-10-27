@@ -3550,7 +3550,12 @@ public class MapsActivity extends FragmentActivity implements
                 .icon(BitmapDescriptorFactory.fromBitmap(smallMarker2)));
     }
 
-
+    //문자발송
+    public void onClick10(View v) {
+        Intent intent = new Intent(getApplicationContext(),
+                SmsActivity.class);
+        startActivity(intent);
+    }
 
 
     @Override
@@ -6655,8 +6660,6 @@ public class MapsActivity extends FragmentActivity implements
 
 
 
-
-
     @Override
     public boolean onMyLocationButtonClick() {
         Toast.makeText(this, "잠시 기다려주세요", Toast.LENGTH_SHORT).show();
@@ -6670,7 +6673,6 @@ public class MapsActivity extends FragmentActivity implements
 
     }
 
-//문자발송
 
 
 

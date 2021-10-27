@@ -36,7 +36,7 @@ public class introActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void onClick(View view){
+    public void onClick11(View view){
         Intent intent=new Intent(Intent.ACTION_VIEW,Uri.parse("http://junggu.ulsan.safems.co.kr"));
         startActivity(intent);
     }
