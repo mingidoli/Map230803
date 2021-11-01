@@ -69,47 +69,63 @@
 
     <ImageButton
         android:id="@+id/imageButton7"
-        android:layout_width="127dp"
-        android:layout_height="119dp"
-        android:layout_marginStart="142dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="58dp"
         android:layout_marginTop="254dp"
-        android:layout_marginEnd="142dp"
-        android:layout_marginBottom="358dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="13dp"
+        android:background="@android:color/transparent"
         android:onClick="sendMessageMap"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton12"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton21"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/map_icon22" />
 
     <ImageButton
-        android:id="@+id/imageButton9"
-        android:layout_width="124dp"
-        android:layout_height="120dp"
-        android:layout_marginStart="226dp"
-        android:layout_marginTop="389dp"
+        android:id="@+id/imageButton21"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="254dp"
         android:layout_marginEnd="61dp"
-        android:layout_marginBottom="222dp"
+        android:layout_marginBottom="13dp"
+        android:onClick="onClick12"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton7"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ts3"
+        android:background="@android:color/transparent"/>
+
+
+    <ImageButton
+        android:id="@+id/imageButton9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="221dp"
         android:onClick="onClick2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/call_icon22" />
+        app:layout_constraintStart_toEndOf="@+id/imageButton12"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton21"
+        app:srcCompat="@drawable/call_icon22"
+    android:background="@android:color/transparent"/>
 
     <ImageButton
         android:id="@+id/imageButton12"
-        android:layout_width="129dp"
-        android:layout_height="124dp"
-        android:layout_marginStart="76dp"
-        android:layout_marginTop="386dp"
-        android:layout_marginEnd="206dp"
-        android:layout_marginBottom="221dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="220dp"
         android:onClick="onClick11"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton9"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/cctv_icon22" />
+        app:layout_constraintTop_toBottomOf="@+id/imageButton7"
+        app:srcCompat="@drawable/cctv_icon22"
+    android:background="@android:color/transparent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

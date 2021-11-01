@@ -20,7 +20,6 @@
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
-
     <uses-feature
         android:name="android.hardware.camera"
         android:required="true" />
@@ -32,6 +31,7 @@
         android:roundIcon="@mipmap/ic_launcher_map_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SafetyMapUlsanJungbu">
+        <activity android:name=".MainActivity"></activity>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -51,11 +51,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name=".introActivity" />
         <activity android:name=".MapsActivity" />
-        <activity android:name=".SmsActivity"/>
-
+        <activity android:name=".SmsActivity" />
     </application>
 
 </manifest>

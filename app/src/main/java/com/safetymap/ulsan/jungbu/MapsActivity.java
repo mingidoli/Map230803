@@ -58,7 +58,7 @@ public class MapsActivity extends FragmentActivity implements
     }
 
     //침입절도
-    public void onClick3(View v){
+    public void onClick18(View v){
 
         Toast.makeText(this, "침입절도 눌렀어요", Toast.LENGTH_LONG).show();
 
@@ -3510,11 +3510,17 @@ public class MapsActivity extends FragmentActivity implements
                 .strokeColor(Color.argb(105,165,102,255))
                 .strokeWidth(20));
 
+        BitmapDrawable bitmapdraw21=(BitmapDrawable)getResources().getDrawable(R.drawable.vacc);
+        Bitmap b21=bitmapdraw21.getBitmap();
+        Bitmap smallMarker21 = Bitmap.createScaledBitmap(b21, 80, 80, false);
+
         LatLng map = new LatLng(35.56242, 129.3504);
         mMap.addMarker(new MarkerOptions()
                 .position(map)
                 .title("백신접종시설")
-                .snippet("관내 백신접종시설(B급)"));
+                .snippet("관내 백신접종시설(B급)")
+                .icon(BitmapDescriptorFactory.fromBitmap(smallMarker21)));
+
         BitmapDrawable bitmapdraw2=(BitmapDrawable)getResources().getDrawable(R.drawable.police_logo);
         Bitmap b2=bitmapdraw2.getBitmap();
         Bitmap smallMarker2 = Bitmap.createScaledBitmap(b2, 120, 120, false);
@@ -3548,6 +3554,46 @@ public class MapsActivity extends FragmentActivity implements
                 .position(map)
                 .title("성안파출소")
                 .icon(BitmapDescriptorFactory.fromBitmap(smallMarker2)));
+
+        BitmapDrawable bitmapdraw25=(BitmapDrawable)getResources().getDrawable(R.drawable.no);
+        Bitmap b25=bitmapdraw25.getBitmap();
+        Bitmap smallMarker25 = Bitmap.createScaledBitmap(b25, 120, 120, false);
+
+        map = new LatLng(35.563912776495094, 129.34050323984454);
+        mMap.addMarker(new MarkerOptions()
+                .position(map)
+                .title("성범죄자알림e")
+                .icon(BitmapDescriptorFactory.fromBitmap(smallMarker25)));
+
+        map = new LatLng(35.56422679622542, 129.33768849751579);
+        mMap.addMarker(new MarkerOptions()
+                .position(map)
+                .title("성범죄자알림e")
+                .icon(BitmapDescriptorFactory.fromBitmap(smallMarker25)));
+
+        map = new LatLng(35.55986362451844, 129.34937108217318);
+        mMap.addMarker(new MarkerOptions()
+                .position(map)
+                .title("성범죄자알림e")
+                .icon(BitmapDescriptorFactory.fromBitmap(smallMarker25)));
+
+        map = new LatLng(35.55339901198729, 129.29713271285763);
+        mMap.addMarker(new MarkerOptions()
+                .position(map)
+                .title("성범죄자알림e")
+                .icon(BitmapDescriptorFactory.fromBitmap(smallMarker25)));
+
+        map = new LatLng(35.563561160024506, 129.2676106705291);
+        mMap.addMarker(new MarkerOptions()
+                .position(map)
+                .title("성범죄자알림e")
+                .icon(BitmapDescriptorFactory.fromBitmap(smallMarker25)));
+
+        map = new LatLng(35.559387669570015, 129.34859742450203);
+        mMap.addMarker(new MarkerOptions()
+                .position(map)
+                .title("성범죄자알림e")
+                .icon(BitmapDescriptorFactory.fromBitmap(smallMarker25)));
     }
 
     //문자발송

@@ -40,6 +40,11 @@ public class introActivity extends AppCompatActivity {
         Intent intent=new Intent(Intent.ACTION_VIEW,Uri.parse("http://junggu.ulsan.safems.co.kr"));
         startActivity(intent);
     }
+
+    public void onClick12(View view){
+        Intent intent=new Intent(Intent.ACTION_VIEW,Uri.parse("http://patrol.police.go.kr/usr/main.do"));
+        startActivity(intent);
+    }
 }
 
 

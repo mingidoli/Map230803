@@ -10,70 +10,108 @@
         android:id="@+id/textViewPhoneNo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="44dp"
-        android:text="수신 전화번호"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginBottom="0dp"
+        android:text="수신 : 울산중부경찰서 범죄예방진단팀"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="@color/teal_200"
-        android:textSize="14sp"
+        android:textColor="@color/design_default_color_secondary_variant"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPhoneNo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextPhoneNo"
-        android:layout_width="344dp"
-        android:layout_height="41dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="30dp"
+        android:hint="미입력시 미리 설정된 범죄예방진단팀에게 자동발송"
         android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/textViewSMS"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewPhoneNo"/>
+        app:layout_constraintTop_toBottomOf="@+id/textViewPhoneNo" />
 
 
     <TextView
         android:id="@+id/textViewSMS"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="메세지를 입력하세요."
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="16dp"
+        android:text="요청사항을 입력해주세요."
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="@color/teal_200"
-        android:textSize="14sp"
+        android:textColor="@color/teal_700"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextSMS"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextPhoneNo" />
 
     <EditText
         android:id="@+id/editTextSMS"
-        android:layout_width="351dp"
-        android:layout_height="106dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="54dp"
         android:gravity="top"
+        android:hint="개선사항이나 진단이 필요한 사항에 대해 입력"
         android:inputType="textMultiLine"
         android:lines="5"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSend"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewSMS" />
 
+
+    //현재위치
+
+
     <Button
         android:id="@+id/buttonSend"
-        android:layout_width="166dp"
-        android:layout_height="56dp"
-        android:layout_marginBottom="160dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="보내기"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:text="현황 통보하기"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextSMS"
-        app:layout_constraintVertical_bias="1.0" />
+        app:rippleColor="@color/teal_700" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="166dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="222dp"
+        android:text="현재위치 확인"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:rippleColor="@color/teal_700" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="현재위치(주소) 표기"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/teal_700"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSend" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

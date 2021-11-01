@@ -59,26 +59,36 @@
         android:id="@+id/btn_8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="140dp"
+        android:layout_marginLeft="240dp"
         android:layout_marginTop="55dp"
         android:onClick="onClick8"
         android:text="기타요소" />
 
     <Button
+        android:id="@+id/btn_18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="55dp"
+        android:onClick="onClick18"
+        android:text="침입절도" />
+
+    <Button
         android:id="@+id/btn_9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="240dp"
-        android:layout_marginTop="55dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="100dp"
         android:onClick="onClick4"
         android:text="초 기 화" />
 
-    <Button
+    <ImageButton
         android:id="@+id/btn_19"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="57dp"
+        android:layout_height="57dp"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="600dp"
+        android:background="@drawable/notification1"
         android:onClick="onClick10"
         android:text="SMS발송" />
 
